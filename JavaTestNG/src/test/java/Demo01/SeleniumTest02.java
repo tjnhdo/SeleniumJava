@@ -38,8 +38,8 @@ public class SeleniumTest02 {
 	WebElement submitBtn = driver.findElement(By.name("btnK"));
 	submitBtn.click();
 	System.out.println("Current URL is:" + driver.getCurrentUrl());
-	Assert.assertTrue(driver.getTitle().contains("automation - Google Search"));
 	System.out.println("Current Title is:" + driver.getTitle());
+	Assert.assertTrue(driver.getTitle().contains("automation - Google Search"));
 	}
 	@AfterClass
 	public void tearDown(){
