@@ -4,6 +4,8 @@
 name: Java CI with Maven
 
 on:
+  Schedule: 
+  - cron:  '05 12 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
